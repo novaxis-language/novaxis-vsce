@@ -4,7 +4,7 @@
 	"description": "Novaxis: Simple, Powerful, Expressive Programming Language.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/novaxis-language/novaxis-visual-studio.git"
+		"url": "https://github.com/novaxis-language/novaxis-vsce.git"
 	},
 	"scopeName": "source.novaxis",
 	"fileTypes": ["novaxis", "nov", "nvx"],
