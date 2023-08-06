@@ -7,7 +7,7 @@
 		"url": "https://github.com/novaxis-language/novaxis-visual-studio.git"
 	},
 	"scopeName": "source.novaxis",
-	"fileTypes": ["novaxis", "nov"],
+	"fileTypes": ["novaxis", "nov", "nvx"],
 	"patterns": [
 		{"include": "#comment.line.hash"},
 		{"include": "#comment.line.double-slash"},
