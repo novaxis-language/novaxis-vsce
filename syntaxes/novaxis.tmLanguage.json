@@ -1,11 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Novaxis",
-	"description": "Novaxis: Simple, Powerful, Expressive Programming Language.",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/novaxis-language/novaxis-vsce.git"
-	},
 	"scopeName": "source.novaxis",
 	"fileTypes": ["novaxis", "nov", "nvx"],
 	"patterns": [
