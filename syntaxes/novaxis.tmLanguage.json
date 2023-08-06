@@ -1,0 +1,100 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Novaxis",
+	"description": "Novaxis: Simple, Powerful, Expressive Programming Language.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/novaxis-language/novaxis-visual-studio.git"
+	},
+	"scopeName": "source.novaxis",
+	"fileTypes": ["novaxis", "nov"],
+	"patterns": [
+		{"include": "#comment.line.hash"},
+		{"include": "#comment.line.double-slash"},
+		{"include": "#keyword.control.novaxis"},
+		{"include": "#keyword.other.novaxis"},
+		{"include": "#punctuation.variable.novaxis"},
+		{"include": "#variable.other.novaxis"},
+		{"include": "#keyword.operator.assignment.novaxis"},
+		{"include": "#constant.character.arrow.novaxis"},
+		{"include": "#variable.value.novaxis"},
+		{"include": "#constant.language.boolean.novaxis"},
+		{"include": "#constant.numeric.novaxis"},
+		{"include": "#constant.character.escape.novaxis"},
+		{"include": "#exceptions"},
+		{
+			"name": "constant.character.escape.novaxis",
+			"match": "\\\\S|\\\\\\\\|\\\\#|\\\\/"
+		},
+		{
+			"name": "constant.language.boolean.novaxis",
+			"match": "\\b(?:true|false)\\b"
+		},
+		{
+			"name": "constant.numeric.novaxis",
+			"match": "\\b-?\\d+(\\.\\d+)?\\b"
+		},
+		{
+			"name": "comment.line.hash",
+			"match": "#.*$"
+	  	},
+	  	{
+			"name": "comment.line.double-slash",
+			"match": "//.*$"
+	  	},
+	  	{
+			"name": "keyword.control.novaxis",
+			"match": "(?i)\\b(Auto|Null|Number|String|List|Boolean)\\b"
+		},
+		{
+			"name": "punctuation.variable.novaxis",
+			"match": "\\?"
+	  	},
+	  	{
+			"name": "variable.other.novaxis",
+			"match": "\\b\\w+\\b"
+	  	},
+	  	{
+			"name": "keyword.operator.assignment.novaxis",
+			"match": "[:=]"
+	  	},
+	  	{
+			"name": "constant.character.arrow.novaxis",
+			"match": "->"
+	  	},
+	  	{
+			"name": "entity.name.type.novaxis",
+			"match": "\\b\\w+\\b"
+	  	},
+	  	{
+			"name": "variable.value.novaxis",
+			"begin": "{",
+			"end": "}",
+			"patterns": [
+				{
+					"name": "variable.value.interpolation.novaxis",
+					"begin": "{",
+					"end": "}",
+					"patterns": [
+						{
+							"name": "variable.other.novaxis",
+							"match": "\\b\\w+\\b"
+						},
+						{
+							"name": "punctuation.variable.novaxis",
+							"match": "\\?"
+			  			},
+			  			{
+							"name": "punctuation.separator.novaxis",
+							"match": ","
+			  			}
+					]
+				},
+				{
+					"name": "variable.value.escape-sequence.novaxis",
+					"match": "\\\\."
+		  		}
+			]
+	  	}
+	]
+}
