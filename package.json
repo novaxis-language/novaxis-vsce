@@ -6,7 +6,7 @@
 		"type": "git",
 		"url": "https://github.com/novaxis-language/novaxis-vsce.git"
 	},
-	"icon": "./images/novaxis-icon.png",
+	"icon": "images/novaxis-icon.png",
 	"publisher": "novaxislanguage",
 	"version": "0.0.1",
 	"engines": {
@@ -24,7 +24,9 @@
 					"novaxis"
 				],
 				"extensions": [
-					"novaxis"
+					"novaxis",
+					"nov",
+					"nvx"
 				],
 				"configuration": "./language-configuration.json"
 			}
@@ -36,7 +38,7 @@
 				"path": "./syntaxes/novaxis.tmLanguage.json"
 			}
 		]
-	},
+  	},
 	"devDependencies": {
 		"vscode": "^1.1.37"
 	}
