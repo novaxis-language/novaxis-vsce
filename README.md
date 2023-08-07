@@ -27,7 +27,7 @@ The Novaxis extension for Visual Studio Code provides enhanced syntax highlighti
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). For more information, please see the [LICENSE.md](LICENSE) file.
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). For more information, see the [LICENSE](LICENSE) file.
 
 ## Contact
 
