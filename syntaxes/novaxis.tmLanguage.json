@@ -16,7 +16,27 @@
 		{"include": "#constant.language.boolean.novaxis"},
 		{"include": "#constant.numeric.novaxis"},
 		{"include": "#constant.character.escape.novaxis"},
+		{"include": "#constant.numeric.bytehex.novaxis"},
+		{"include": "#constant.numeric.bytebinary.novaxis"},
+		{"include": "#constant.numeric.bytesize.novaxis"},
+		{"include": "#keyword.operator.autonot.novaxis"},
 		{"include": "#exceptions"},
+		{
+			"name": "constant.numeric.bytehex.novaxis",
+			"match": "0x[0-9A-Fa-f]+"
+		},
+		{
+			"name": "keyword.operator.autonot.novaxis",
+			"match": "(?i)\\bauto\\s*\\(\\s*not\\s*([^)]+)\\)"
+		},
+		{
+			"name": "constant.numeric.bytebinary.novaxis",
+			"match": "0b[01]+"
+		},
+		{
+			"name": "constant.numeric.bytesize.novaxis",
+			"match": "[0-9]+(?:\\s*(?:[kKmMgGtT]?[bB]|[bB])\\s*)?(?=$|\\b)"
+		},
 		{
 			"name": "constant.character.escape.novaxis",
 			"match": "\\\\S|\\\\\\\\|\\\\#|\\\\/"
@@ -39,7 +59,7 @@
 	  	},
 	  	{
 			"name": "keyword.control.novaxis",
-			"match": "(?i)\\b(Auto|Null|Number|String|List|Boolean)\\b"
+			"match": "(?i)\\b(Auto|Null|Number|String|List|Boolean|Byte)\\b"
 		},
 		{
 			"name": "punctuation.variable.novaxis",
