@@ -9,10 +9,9 @@
 		{"include": "#keyword.control.novaxis"},
 		{"include": "#keyword.other.novaxis"},
 		{"include": "#punctuation.variable.novaxis"},
-		{"include": "#variable.other.novaxis"},
 		{"include": "#keyword.operator.assignment.novaxis"},
 		{"include": "#constant.character.arrow.novaxis"},
-		{"include": "#variable.value.novaxis"},
+		{"include": "#keyword.visibility.novaxis"},
 		{"include": "#constant.language.boolean.novaxis"},
 		{"include": "#constant.numeric.novaxis"},
 		{"include": "#constant.character.escape.novaxis"},
@@ -20,15 +19,16 @@
 		{"include": "#constant.numeric.bytebinary.novaxis"},
 		{"include": "#constant.numeric.bytesize.novaxis"},
 		{"include": "#keyword.operator.autonot.novaxis"},
-		{"include": "#exceptions"},
+		{"include": "#variable.other.novaxis"},
+		{"include": "#variable.value.novaxis"},
 		{
 			"name": "constant.numeric.bytehex.novaxis",
 			"match": "0x[0-9A-Fa-f]+"
 		},
 		{
 			"name": "keyword.operator.autonot.novaxis",
-			"match": "(?i)\\bauto\\s*\\(\\s*not\\s*([^)]+)\\)"
-		},
+			"match": "(?i)\\bauto\\s*\\\\(\\s*not\\s*([^)]+)\\\\)"
+		},		
 		{
 			"name": "constant.numeric.bytebinary.novaxis",
 			"match": "0b[01]+"
@@ -60,6 +60,10 @@
 	  	{
 			"name": "keyword.control.novaxis",
 			"match": "(?i)\\b(Auto|Null|Number|String|List|Boolean|Byte)\\b"
+		},
+		{
+			"name": "keyword.visibility.novaxis",
+			"match": "(?i)\\b(Public|Protected|Inherited|Private|Restricted)\\b"
 		},
 		{
 			"name": "punctuation.variable.novaxis",
